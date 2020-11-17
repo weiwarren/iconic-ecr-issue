@@ -47,6 +47,6 @@
 ## Conclusion:
 When a staging builds after master on the same commit hash, then the commit hash tag will reference the staging image, result policy 2 to kick in after 15 days and remove the image. 
 
-In normal cases, the image builds will follow staging, then master which result the same image having xxxxxxx(commit hash), staging-xxxxxxx, master-xxxxxxx, which means policy 1 will always take precedence, image will get removed. Or they could have complete different build hash. In this case, when the same build gets triggered in staging, it resultedundesired deletions, which consequently cause error on image pulling.
+In normal cases, the image builds will follow staging, then master which result the same image having xxxxxxx(commit hash), staging-xxxxxxx, master-xxxxxxx, which means policy 1 will always take precedence, image will not be removed. Or they could have complete different build hash. In this case, when the same build gets triggered in staging, it resulted undesired deletions, which consequently cause error on image pulling.
 
 To avoid this from happening in the future, short term solution is  to ensure the uniqueness of each build hash (include timestamp, or incremental id), long term solution is to use different image tags between staging and production.
