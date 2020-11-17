@@ -5,21 +5,19 @@
 
 
 | Tag | sha |
-- | -
-| 0d8a4c9 | 40e66...168 
-| master-0d8a4c9 | 40e66...168 
-| | 
-
+| --- | --- |
+| 0d8a4c9 | 40e66...168 |
+| master-0d8a4c9 | 40e66...168 |
 ### 2. automated build on staging branch resulted the tag 0d8a4c9  refers to the new image ###
 | `2020-08-31T00:41:11Z` | Tags: 0d8a4c9, staging-0d8a4c9 | Image 'sha256:3fbc1092bbcf068d189e769e19fa736111f6e64c0fce31adcb915f11ce4e5ec2' pushed
 
 
 | Tag | sha |
-- | -
-| 0d8a4c9 | 3fbc10...ec2 
-| staging-0d8a4c9 | 3fbc10...ec2 
-| master-0d8a4c9 | 40e66...168 
-| |
+| --- | --- |
+| 0d8a4c9 | 3fbc10...ec2 |
+| staging-0d8a4c9 | 3fbc10...ec2 | 
+| master-0d8a4c9 | 40e66...168 |
+
 
 
 ### 3. lifecycle policy 2 removed staging image as no master tag is associated now ###
@@ -34,12 +32,12 @@
 | `2020-09-15T19:35:16Z` | Tags: 0d8a4c9, master-0d8a4c9 | Image 'sha256:f0662af3916cb6c5006daf86fcca546e431025f05e52e42335546841a03f6980' pushed 
 
 | Tag | sha |
-- | -
-| 0d8a4c9 | 3fbc10...ec2 
-| staging-0d8a4c9 | 3fbc10...ec2 
-| master-0d8a4c9 | f0662a...6980
-| Untagged | 40e66...168 
-| |
+| --- | --- |
+| 0d8a4c9 | 3fbc10...ec2 |
+| staging-0d8a4c9 | 3fbc10...ec2 |
+| master-0d8a4c9 | f0662a...6980 |
+| Untagged | 40e66...168 |
+
 
 ### 6. Now the original image has no tags associated and got removed by the lifecycle policy
 
